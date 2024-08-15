@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>motivational app by kamal sir</title>
+    <style>
+        * {
+            font-size: 50px;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>new Motivational Msg</h1>
+        <h2 id="msg"></h2>
+        <script>
+            function show() {
+
+                let msg = document.getElementById("msg");
+
+                let data = ["be a warrior", "trust the process", "u can do it", "just do it", "all the best"];
+                let r = parseInt(Math.random() * data.length);
+                msg.innerHTML = data[r];
+            }
+            show();
+            setInterval(show, 5000);
+        </script>
+    </center>
+</body>
+
+</html>
